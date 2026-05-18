@@ -21,3 +21,12 @@ Ademas, todos los audios generados deben ser mono, ser exportados en WAV y norma
 - Se consiguió crear las 100 frases, pero ahora es mas notable un truncamiento de los golpes, especialmente al introducir las frases creadas en el software Audacity, se nota que gran parte del decaimiento de la onda es cortado y esto se nota al escucharlo, eso si, la distorsion sigue siendo inexistente y las frases suenan casi naturales.
 - Luego de los avances del anterior punto se pudo conseguir que el truncamiento de los golpes sea menor, casi hasta eliminado, ahora el decaimiento de la onda ya no se corta ni se oye cortado.
 - Ahora la musicalidad de las frases generadas se siente mas natural y tiene mas coherencia con lo que un baterista tocaria.
+# COMO INSTALAR:
+- En una terminal en VS Code ejecuta: conda env create -f requirements.yml
+- Activa el ambiente virtual con: conda activate adtof_phrase_generator
+# DESCARGA DATOS DE GOLPES INDIVIDUALES:
+- Las frases de batería que genera este repositorio utilizan grabaciones de golpes individuales de 5 elementos de la bateria, estas grabaciones estan almacenadas en https://drive.google.com/drive/folders/1G3E6QxXA3SHx1mKPQkKrcd_l6EoVWth3?usp=sharing
+- Descarga esta carpeta y pega su contenido en la carpeta "MUESTRAS" de este repositorio.
+# EJECUCIÓN:
+- Para ejecutar el generador de frases de bateria, con el ambiente virtual activo, ejecuta: python .\SRC\phrase_generator.py   
+- De esta manera se ejecutará el generador de frases y producira 100 frases de bateria utilizando las grabaciones de golpes individuales mas sus anotaciones como archivos .json
