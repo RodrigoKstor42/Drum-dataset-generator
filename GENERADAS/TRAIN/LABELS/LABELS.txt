@@ -1,0 +1,1 @@
+Aqui se almacenaran los archivos .json correspondientes a cada frase generada.
