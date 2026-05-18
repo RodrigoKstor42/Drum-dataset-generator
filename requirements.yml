@@ -1,0 +1,20 @@
+name: adtof_phrase_generator
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - librosa
+  - soundfile
+  - audioread
+  - pip
+
+  # Optional but useful for debugging and waveform inspection
+  - matplotlib
+  - jupyter
+
+  - pip:
+      - tqdm
